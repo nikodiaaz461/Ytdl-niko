@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Downloader</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <audio id="myAudio" loop>
+    <source src="audio.mp3" type="audio/mpeg">
+</audio>
+
+<div id="overlay">
+<button class="st" id="startButton" onclick="startAudio()">Start</button>
+</div>
+ 
+ <div class="jk">
+  <h5>Porzzdev</h5>
+  <p class="pp">Downloader YouTube</p>
+  
+  <a href="https://wa.me/6289507597767" target="_blank">
+   <button class="contact">WhatsApp</button>
+  </a>
+  
+  <a href="https://wa.me/6283821480178" target="_blank">
+   <button class="cs">WhatsApp Ai</button>
+  </a>
+  
+ </div>
+ 
+ 
+ 
+    <div class="container">
+        <h2 class="hh"></h2>
+        
+        <input class="url" type="text" id="videoUrl" placeholder="Masukkan URL YouTube">
+        
+        <div class="btn-group">
+            <button onclick="convertToMp3()">Download MP3</button>
+            <button onclick="convertToMp4()">Download MP4</button>
+        </div>
+
+        <div id="result"></div>
+
+       
+        
+        
+        
+    
+
+<script>
+    function startAudio() {
+        var audio = document.getElementById("myAudio");
+        var overlay = document.getElementById("overlay");
+
+        audio.play().then(() => {
+            overlay.style.display = "none"; // Sembunyikan tombol setelah diklik
+        }).catch(error => {
+            console.log("Audio gagal diputar:", error);
+        });
+    }
+</script>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

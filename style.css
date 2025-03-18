@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+    text-align: center;
+    background: #23232F;
+ color: #ffffff;
+    padding: 20px;
+}
+
+
+
+.st {
+ font-size: 30px;
+ width: 100px;
+}
+
+.hh {
+ margin-top: 80px;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+input, textarea {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #3EC3D6;
+    border-radius: 5px;
+    background: #333;
+    color: white;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    background-color: #6CB8F7;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #118191;
+}
+
+#result, #comments {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.comment-box {
+    background: #333;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.comment-box button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.comment-box button:hover {
+    background-color: #c82333;
+}
+
+.h2 {
+ margin-top: 200px;
+}
+
+h5 {
+ font-size: 40px;
+}
+
+.pp {
+ color: #3EADD6;
+ margin-top: -13px;
+}
+
+.cs {
+ background: transparent;
+ border: 1px solid #3EADD6;
+ height: 40px;
+ padding: 10px;
+}
+
+.contact {
+ background: transparent;
+ border: 1px solid #3EADD6;
+ height: 40px;
+ padding: 10px;
+ margin-left: -10px;
+}
+
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.9); /* Latar belakang gelap */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+        }
